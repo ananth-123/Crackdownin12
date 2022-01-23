@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hangman</title>
+  </head>
+
+  <body >
+    <div class="container">
+      <br />
+      <h1
+        class="text-center"
+        style="
+          font-family: 'Bebas Neue', cursive;
+          font-family: 'IBM Plex Sans', sans-serif;
+        "
+      >
+        Hangman
+      </h1>
+      <div class="float-right">
+        Wrong Guesses: <span id="mistakes">0</span> of
+        <span id="maxWrongGuesses"></span>
+      </div>
+      <div class="text-center">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <img id="pic" src="./images/0.png" alt="startImage" />
+        <br />
+        <br />
+        <p>Guess the Movie:</p>
+        <p id="wordSpotlight">The word to be guessed goes here</p>
+        <div id="keyboard"></div>
+        <button class="btn btn-info" onClick="reset()">Reset</button>
+        <button id= "btnParty">a</button>
+        <div id="tsparticles"></div>
+
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+
+  <script src="./js/hangman.js"></script>
+</html>
